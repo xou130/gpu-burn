@@ -110,7 +110,7 @@ template <class T> class GPU_Test {
     GPU_Test(int dev, bool doubles, bool tensors, const char *kernelFile)
         : d_devNumber(dev), d_doubles(doubles), d_tensors(tensors), d_kernelFile(kernelFile){
         checkError(cuDeviceGet(&d_dev, d_devNumber));
-        checkError(cuCtxCreate(&d_ctx, 0, d_dev));
+        checkError(cuCtxCreate(&d_ctx, NULL, 0, d_dev));
 
         bind();
 
