@@ -1,6 +1,7 @@
 # gpu-burn
 Multi-GPU CUDA stress test
 http://wili.cc/blog/gpu-burn.html
+Note: CUDA 13 is different from CUDA 12. Remove parameter NULL in gpu_burn-drv.cpp line 113 to compile in CUDA 12.
 
 # Easy docker build and run
 
